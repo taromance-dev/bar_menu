@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "251210085606",
+    "firebase_url": "https://taromance-a6d1e-default-rtdb.firebaseio.com",
+    "project_id": "taromance-a6d1e",
+    "storage_bucket": "taromance-a6d1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251210085606:android:59936f8566c84dec137727",
+        "android_client_info": {
+          "package_name": "com.taromance.barmenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251210085606-j1p4de37k6e4gj44kocpsgfj0v199l13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZk3Jw2tkl3S7FEreG_BFozApFmlTYDI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251210085606-j1p4de37k6e4gj44kocpsgfj0v199l13.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "251210085606-rtk58554tm9frlppd0i9jtg0m4rn3ulo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.taromance.barmenu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

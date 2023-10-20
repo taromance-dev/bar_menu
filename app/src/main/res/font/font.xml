@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/maplestorybold"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/maplestorylight"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/bm_euljiro"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/bm_euljiro_10ylater"/>
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/bm_euljiro_oraeorae"/>
+
+
+</font-family>

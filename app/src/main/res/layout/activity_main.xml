@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iv_mainbg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_menu_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_menu_main_guide"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:alpha="1"
+                    android:background="@drawable/iv_btn_menu_main_guide_k"
+                    android:button="@null"
+                    android:checked="false"
+                    android:fontFamily="@font/bm_euljiro_10ylater"
+                    android:text="@null"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_menu_main_whisky"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:alpha="1"
+                    android:background="@drawable/iv_btn_menu_main_whisky_k"
+                    android:button="@null"
+                    android:fontFamily="@font/bm_euljiro_10ylater"
+                    android:text="@null"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_menu_main_cocktail"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:alpha="1"
+                    android:background="@drawable/iv_btn_menu_main_cocktail_k"
+                    android:button="@null"
+                    android:fontFamily="@font/bm_euljiro_10ylater"
+                    android:text="@null"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_menu_main_wineandspirits"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:alpha="1"
+                    android:background="@drawable/iv_btn_menu_main_wineandspirits_k"
+                    android:button="@null"
+                    android:fontFamily="@font/bm_euljiro_10ylater"
+                    android:text="@null"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="180dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_scroll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/iv_scroll_1920h_03" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_top_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox_finder"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_weight="1"
+                    android:text="      검  색"
+                    android:button="@null"
+                    android:fontFamily="@font/bm_euljiro_10ylater"
+                    android:textColor="@color/black"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/iv_btn_menu_sub" />
+
+                <Button
+                    android:id="@+id/btn_setting"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:text="설 정"
+                    android:fontFamily="@font/bm_euljiro_10ylater"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/iv_btn_menu_sub" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="85dp"
+                android:orientation="vertical"
+                android:paddingTop="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/layout_finder_whisky"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_honey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="벌꿀"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_floral"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="꽃향"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_vanilla"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="바닐라"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_cinnamon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="시나몬"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_fresh_fruits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="신선한 과일"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_dried_fruits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="말린 과일"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_citrus_fruits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="상큼한 과일"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_sweet_fruits"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="단 과일"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_butter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="버터"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_cream"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="크림"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_caramel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="카라멜"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_chocolate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="초콜릿"
+                            android:textColor="@color/black" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_nuts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="견과류"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_malt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="보리향"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_wood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="나무향"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_salt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="소금"
+                            android:textColor="@color/black" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_spicy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="스파이시"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_smoky"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="스모크"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_peat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="피트"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_herb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="허브"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_strength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="높은 도수"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_limited"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="한정판"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_finder_Whisky_finder_tag_old"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="올드 바틀"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btn_finder_reset"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="#F8D38F"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="리셋"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btn_finder_search"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#F8D38F"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="검색"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_finder_cocktail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/finder_cocktail_tv_lv_alcoholbooze"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="알콜 도수 : "
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_finder_cocktail_lv_alcoholbooze"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_finder_cocktail_lv_alcoholbooze_0"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="없음"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_finder_cocktail_lv_alcoholbooze_1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="약하게"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_finder_cocktail_lv_alcoholbooze_2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="적당히"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/radiobutton_finder_cocktail_lv_alcoholbooze_3"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="강하게"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:minHeight="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/finder_cocktail_tv_tag_fruits"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="과일 종류 : "
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_finder_cocktail_tag_fruits"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_fruits_citrus"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="감귤류"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_fruits_berry"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="베리류"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_fruits_soft"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="소프트"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_fruits_tropical"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="트로피컬"
+                            android:textColor="@color/black" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="30dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/finder_cocktail_tv_etc"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="기  타 : "
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_finder_cocktail_tag_etc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_sparkling"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="탄산"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_fruits_milk_cream"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="우유/크림"
+                            android:textColor="@color/black" />
+
+
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_fruits_chocolate_coffee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="초콜렛/커피"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton_finder_Classic_finder_tag_herb_spice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:minHeight="18dp"
+                            android:text="허브/향신료"
+                            android:textColor="@color/black" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="30dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btn_finder_cocktail_reset"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="#F8D38F"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="리셋"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btn_finder_cocktail_search"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#F8D38F"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="검색"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_menu_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_menu_title_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/bm_euljiro_10ylater"
+                            android:text="각 메뉴를 클릭하시면 상세 정보를 확인하실 수 있습니다."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_menu_title_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="380dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+
+                            <TextView
+                                android:id="@+id/tv_menu_title_glass"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="30ml"
+                                android:textAlignment="textEnd"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/tv_menu_title_bottle"
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="Bottle"
+                                android:textAlignment="textEnd"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/layout_freeorder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_lv_alcoholbooze"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="알콜 도수"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup_lv_alcoholbooze"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_alcoholbooze_0"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_alcoholbooze_1"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="약하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_alcoholbooze_2"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="적당히"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_alcoholbooze_3"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="강하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_alcoholbooze_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="상관 없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/tv_lv_sparkling"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="탄산"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup_lv_sparkling"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sparkling_0"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sparkling_1"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="약하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sparkling_2"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="적당히"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sparkling_3"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="강하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sparkling_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="상관 없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/tv_lv_sweetness"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="단맛"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup_lv_sweetness"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sweetness_0"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sweetness_1"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="약하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sweetness_2"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="적당히"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sweetness_3"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="강하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sweetness_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="상관 없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/tv_lv_sour"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="신맛"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <RadioGroup
+                                android:id="@+id/radioGroup_lv_sour"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sour_0"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sour_1"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="약하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sour_2"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="적당히"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sour_3"
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="강하게"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />+
+
+                                <RadioButton
+                                    android:id="@+id/radiobutton_lv_sour_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bm_euljiro_10ylater"
+                                    android:text="상관 없음"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/tv_tag_flavor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="@font/bm_euljiro_10ylater"
+                                android:text="선호하는 맛 / 향 (3개 이하)"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_lemon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="레몬"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_lime"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="라임"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_peach"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="복숭아"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_berry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="베리류"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_orange"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="오렌지"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_melon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="멜론"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_grapefruit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="자몽"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_cinnamon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="시나몬"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_coconut"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="코코넛"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_herb"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="허브"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_milk"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="우유"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_pineapple"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="파인애플"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_apple"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="사과"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_coffee"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="커피"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_chocolate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="초콜릿"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_wood"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="목재"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_smoke"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="훈연"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_honey"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="꿀"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_ginger"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="생강"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox_finder_Cocktail_tag_banana"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:minHeight="18dp"
+                                        android:text="바나나"
+                                        android:textColor="#000000"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_freeorder_notice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="45dp"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:textColor="@color/black"
+                                        android:textSize="25sp"
+                                        android:text="- 체크 후 바텐더에게 보여주세요. -" />
+
+                                    <Button
+                                        android:id="@+id/btn_freeorder_reset"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#F8D38F"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:text="Reset"
+                                        android:textColor="#000000" />
+
+                                    <Button
+                                        android:id="@+id/btn_freeorder_search"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dp"
+                                        android:backgroundTint="#F8D38F"
+                                        android:fontFamily="@font/bm_euljiro_10ylater"
+                                        android:text="검색"
+                                        android:textColor="#000000"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/listview_scroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:divider="#ffffff"
+                            android:dividerHeight="0px">
+
+                        </ListView>
+
+                        <ImageView
+                            android:id="@+id/iv_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/arrow" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_guide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_menu_sub_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_guide"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="이용안내"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_notice"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="공지사항"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_deliveryfood"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="배달추천"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_whisky"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_menu_sub_whisky"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_recommendation"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="추천"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_scotch"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="스카치"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_american"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="아메리칸"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_others"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="기타 국가"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_cocktail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_menu_sub_cocktail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Space
+                        android:id="@+id/space_signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_signature"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="시그니처"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_classic"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="클래식"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_highball"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="하이볼"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_freeorder"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="프리 오더"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_wineandspirits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_menu_sub_wineandspirits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_wine"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="와인"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_spirits"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="스피릿"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_menu_sub_liqueur"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/iv_btn_menu_sub"
+                        android:button="@null"
+                        android:fontFamily="@font/bm_euljiro_10ylater"
+                        android:text="리큐르"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gif_title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/tv_touchpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:fontFamily="@font/bm_euljiro_10ylater"
+            android:text="Touch Press"
+            android:textSize="36sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_titletext"
+            android:layout_width="92dp"
+            android:layout_height="460dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/titlelogo_text" />
+
+        <Button
+            android:id="@+id/btn_startMain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
